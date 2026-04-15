@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* CSS Custom Properties (CSS Variables) */
+
+:root {
+	--color-blue: hsl(233, 54%, 16%);
+	--color-pink: hsl(341, 92%, 62%);
+	--color-grey: hsl(232, 10%, 56%);
+	--color-white: hsl(0, 0%, 100%);
+
+	--gradient-blue: linear-gradient(
+		hsla(233, 54%, 16%, 0.95),
+		hsla(234, 25%, 52%, 0.9)
+	);
+	--gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+	--gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+  --gradient-gray: linear-gradient(white, #f0f1ff 40%)
+}
+
+/* Resets */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Plus Jakarta Sans';
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+h1, h2, h3 {
+	line-height: 1.2;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	font-style: italic;
+}
+
+button, .button {
+	display: inline-block;
+	padding-block: 0.5rem;
+	padding-inline: 1.5rem;
+	border-radius: 4rem;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+a {
+	color: var(--color-pink);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Utility Classes */
+
+.page-wrapper {
+	min-height: 100svh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.inner {
+	width: min(100% - 3rem, 64rem);
+	margin-inline: auto;
+	padding-block: 3rem;
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.gap-1-5 {
+	gap: 1.5rem;
+}
+
+.gap-3 {
+	gap: 3rem;
+}
+
+.auto-fill {
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+/* Color Utility Classes */
+
+.bg-primary {
+	background-color: var(--color-blue);
+}
+
+.bg-accent {
+	background-color: var(--color-pink);
+}
+
+.bg-neutral {
+	background-color: var(--color-grey);
+}
+
+.bg-light {
+	background-color: var(--color-white);
+}
+
+.bg-gradient-primary {
+  background-image: var(--gradient-blue);
+}
+
+.bg-gradient-accent {
+	background-image: var(--gradient-pink);
+}
+
+.bg-gradient-accent-2 {
+	background-image: var(--gradient-purple);
+}
+
+.bg-background-neutral {
+  background-image: var(--gradient-gray);
+}
+
+.primary {
+	color: var(--color-blue);
+}
+
+.accent {
+	color: var(--color-pink);
+}
+
+.neutral {
+	color: var(--color-grey);
+}
+
+.light {
+	color: var(--color-white);
+}
