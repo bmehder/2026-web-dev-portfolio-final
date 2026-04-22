@@ -35,6 +35,10 @@ h1, h2, h3 {
 	line-height: 1.2;
 }
 
+p {
+	color: #555;
+}
+
 img {
 	display: block;
 	width: 100%;
@@ -106,6 +110,15 @@ a:hover {
 
 .auto-fill {
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+.float-right {
+	@media (width > 48rem) {
+		max-width: 32rem;
+		float: right;
+		margin-left: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
 }
 
 /* Color Utility Classes */

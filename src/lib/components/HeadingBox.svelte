@@ -1,5 +1,5 @@
 <div class="bg-gradient-accent light">
-  <h2>Check out our most popular courses!</h2>
+  <h2>Check out my collections!</h2>
 </div>
 
 <style>

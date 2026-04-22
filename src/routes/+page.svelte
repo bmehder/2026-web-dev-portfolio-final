@@ -19,7 +19,7 @@
 				icon={AnimationIcon}
 				heading="Animation"
 				description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
-				href="/"
+				href="/portfolio"
 			></Box>
 			<Box
 				icon={DesignIcon}

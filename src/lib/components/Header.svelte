@@ -11,7 +11,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/portfolio">Portfolio</a></li>
-          <a class="button bg-primary light" href="/">Contact Me</a>
+          <a class="button bg-primary light" href="/contact">Contact Me</a>
         </ul>
       </nav>
     </div>

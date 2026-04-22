@@ -6,7 +6,7 @@
   <div class="outer bg-primary">
     <div class="inner flex flex-wrap space-between align-items-center gap-1-5">
       <a href="/"><img src={LightLogo} alt="light logo"></a>
-      <a class="button bg-gradient-accent-2 light" href="/">Get Started</a>
+      <a class="button bg-gradient-accent-2 light" href="/contact">Contact Me</a>
     </div>
   </div>
 </footer>
