@@ -8,10 +8,10 @@
   import Counter from "$lib/components/Counter.svelte"
 </script>
 
-## Something
+  ## Something
 
-<p>This is some html.</p>
+  <p>This is some html.</p>
 
-<Counter />
+  <Counter />
 
-<p>This is some html too.</p>
+  <p>This is some html too.</p>

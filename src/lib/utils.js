@@ -7,3 +7,14 @@ export const formatDate = dateString => {
 		day: 'numeric',
 	})
 }
+
+export const formatPrice = n => {
+	const formatter = new Intl.NumberFormat('en-US', {
+		style: 'currency',
+		currency: 'USD'
+	})
+
+	const formattedPrice = formatter.format(n)
+
+	return formattedPrice
+}
