@@ -74,6 +74,7 @@
 
 	/* --- Nav --- */
 	ul {
+		margin: 0;
 		display: flex;
 		align-items: center;
 		gap: 1.5rem;
@@ -94,7 +95,6 @@
 		}
 
 		ul {
-			margin: 0;
 			flex-direction: column;
 			align-items: start;
 			overflow: hidden;
