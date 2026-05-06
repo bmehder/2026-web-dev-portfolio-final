@@ -55,6 +55,7 @@
 
 	.container {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -84,22 +85,18 @@
 
 	/* --- Mobile styles --- */
 	@media (width < 48rem) {
-		.container {
-			flex-wrap: wrap;
-		}
-
 		nav {
 			min-width: 100%;
 			display: grid;
 			grid-template-rows: 0fr;
 		}
-
+		
 		ul {
 			flex-direction: column;
 			align-items: start;
 			overflow: hidden;
 		}
-
+		
 		/* Open state */
 		.open {
 			min-height: 100svh;
