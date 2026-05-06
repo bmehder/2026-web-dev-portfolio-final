@@ -4,10 +4,14 @@
 	let seconds = $state([])
 	let result = $state(null)
 
-	$inspect(result)
+	$inspect(firsts, operator, seconds, result)
 
 	const addValue = event => {
 		const value = event.target.value
+
+		const activeValues = operator == null ? firsts : seconds
+
+		if (value === "." && activeValues.includes(".")) return
 
 		if (operator == null) {
 			firsts = [...firsts, value]
@@ -59,6 +63,11 @@
 		seconds = []
 		result = null
 	}
+
+	const formatNumber = n =>
+		new Intl.NumberFormat().format(
+			parseFloat(n.toFixed(10))
+		)
 </script>
 
 <div class="calculator">
@@ -66,7 +75,7 @@
 		{#if result == null}
 			{firsts.join("")} {operator} {seconds.join("")}
 		{:else}
-			{new Intl.NumberFormat().format(result)}
+			{formatNumber(result)}
 		{/if}
 	</div>
 	
