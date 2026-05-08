@@ -1,5 +1,5 @@
 <script>
-	import DarkLogo from '$lib/assets/logo-dark.svg'
+  import LightLogo from '$lib/assets/logo-light.svg'
 	import Hamburger from '$lib/assets/icons/hamburger.svg'
 	import Close from '$lib/assets/icons/close.svg'
 
@@ -13,7 +13,7 @@
 		<div class="inner">
 			<div class="container">
 				<a href="/" class="logo">
-					<img src={DarkLogo} alt="logo" />
+					<img src={LightLogo} alt="logo" />
 				</a>
 
 				<button
@@ -37,7 +37,7 @@
 							<a href="/portfolio" onclick={closeNav}>Portfolio</a>
 						</li>
 						<li>
-							<a class="button bg-primary light" href="/contact" onclick={closeNav}
+							<a class="button bg-gradient-accent-2 light" href="/contact" onclick={closeNav}
 								>Contact</a
 							>
 						</li>
@@ -49,6 +49,10 @@
 </header>
 
 <style>
+	.outer {
+		background-color: var(--color-blue);
+	}
+
 	.inner {
 		padding-block: 1.5rem;
 	}
@@ -95,6 +99,10 @@
 			flex-direction: column;
 			align-items: start;
 			overflow: hidden;
+		}
+
+		button img {
+			filter: invert(1);
 		}
 		
 		/* Open state */
