@@ -2,9 +2,9 @@
 	let { title = "Todo List" } = $props()
 	
 	let todos = $state([
-		{task: "Learn", id: 0, isCompleted: false},
-		{task: "Play", id: 1, isCompleted: true},
-		{task: "Eat", id: 2, isCompleted: false}, 
+		// {task: "Learn", id: 0, isCompleted: false},
+		// {task: "Play", id: 1, isCompleted: true},
+		// {task: "Eat", id: 2, isCompleted: false}, 
 	])
 	let todoDraft = $state("")
 	
