@@ -26,7 +26,7 @@
 </script>
 ```
 
-```html
+```svelte
 <div class="counter flex align-items-center">
   <button onclick={decrement}>-</button>
   <span>{count}</span>

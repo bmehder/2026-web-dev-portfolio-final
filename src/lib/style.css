@@ -67,6 +67,16 @@ a:hover {
 	text-decoration: underline;
 }
 
+pre {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	overflow-x: auto;
+}
+
+code {
+	font-family: monospace;
+}
+
 /* Utility Classes */
 
 .page-wrapper {
