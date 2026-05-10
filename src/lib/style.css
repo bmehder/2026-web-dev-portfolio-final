@@ -76,6 +76,15 @@ code {
 	font-family: monospace;
 }
 
+pre,
+code {
+	max-width: 100%;
+}
+
+pre {
+	overflow-x: auto;
+}
+
 /* Utility Classes */
 
 .page-wrapper {

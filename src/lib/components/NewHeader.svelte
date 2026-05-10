@@ -1,11 +1,26 @@
 <script>
-  import LightLogo from '$lib/assets/logo-light.svg'
+	import { afterNavigate } from '$app/navigation';
+	import LightLogo from '$lib/assets/logo-light.svg'
 	import Hamburger from '$lib/assets/icons/hamburger.svg'
 	import Close from '$lib/assets/icons/close.svg'
 
 	let isOpen = $state(false)
 
-	const closeNav = () => (isOpen = false)
+	const closeNav = () => {
+		isOpen = false
+	}
+
+	$effect(() => {
+		document.body.style.overflow = isOpen ? "hidden" : ""
+
+		return () => {
+			document.body.style.overflow = ""
+		}
+	})
+
+	afterNavigate(() => {
+		closeNav()
+	})
 </script>
 
 <header>
@@ -31,14 +46,16 @@
 
 				<nav id="site-nav" class={{ open: isOpen }}>
 					<ul>
-						<li><a href="/" onclick={closeNav}>Home</a></li>
-						<li><a href="/about" onclick={closeNav}>About</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
 						<li>
-							<a href="/portfolio" onclick={closeNav}>Portfolio</a>
+							<a href="/portfolio">Portfolio</a>
 						</li>
 						<li>
-							<a class="button bg-gradient-accent-2 light" href="/contact" onclick={closeNav}
-								>Contact</a
+							<a
+								class="button bg-gradient-accent-2 light"
+								href="/contact"
+							>Contact</a
 							>
 						</li>
 					</ul>
@@ -79,10 +96,10 @@
 
 	/* --- Nav --- */
 	ul {
-		margin: 0;
 		display: flex;
 		align-items: center;
 		gap: 1.5rem;
+		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
@@ -94,7 +111,7 @@
 			display: grid;
 			grid-template-rows: 0fr;
 		}
-		
+
 		ul {
 			flex-direction: column;
 			align-items: start;
@@ -104,7 +121,7 @@
 		button img {
 			filter: invert(1);
 		}
-		
+
 		/* Open state */
 		.open {
 			min-height: 100svh;
