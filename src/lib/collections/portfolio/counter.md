@@ -52,5 +52,4 @@
     text-align: center;
   }
 </style>
-
 ```
