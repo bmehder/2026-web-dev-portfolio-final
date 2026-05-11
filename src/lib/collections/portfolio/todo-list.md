@@ -15,8 +15,8 @@
 
 <div class="grid auto-fill gap-3">
   <TodoList />
-  <TodoList />
-  <TodoList />
+  <TodoList title="List Two" />
+  <TodoList title="My List" />
 </div>
 
 <p>This is some html too.</p>

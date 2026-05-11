@@ -19,7 +19,7 @@
           <h1>{data.post.meta.title}</h1>
           <div class="date">{formatDate(data.post.meta.date)}</div>
         </div>
-        <img src="/{data.post.meta.image}" alt="">
+        <!-- <img src="/{data.post.meta.image}" alt=""> -->
         <div>
           <Post></Post>
         </div>

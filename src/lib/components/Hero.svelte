@@ -2,8 +2,8 @@
   <div class="outer">
     <div class="inner">
       <div class="content bg-gradient-primary light">
-        <h1>Maximize skill, minimizeinim budget</h1>
-        <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <h1>Maximize skill, minimize budget</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus id repellat pariatur! Quia, recusandae perferendis.</p>
         <a href="/portfolio" class="button bg-gradient-accent light">View Portfolio</a>
       </div>
     </div>

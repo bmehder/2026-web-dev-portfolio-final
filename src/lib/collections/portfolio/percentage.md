@@ -9,5 +9,4 @@
   import Percentage from "$lib/components/Percentage.svelte"
 </script>
 
-## Percentage Component
 <Percentage />

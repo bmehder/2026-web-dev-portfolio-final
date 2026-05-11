@@ -9,6 +9,5 @@
   import PizzaCalculator from "$lib/components/PizzaCalculator.svelte"
 </script>
 
-## A Pizza Calculator Component
 <PizzaCalculator />
 
