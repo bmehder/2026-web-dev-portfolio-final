@@ -8,7 +8,7 @@
 
 <svelte:head>
 	<title>{data.post.meta.title} | Acme Corporation</title>
-	<meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officiis provident perspiciatis rem impedit maxime?">
+	<meta name="description" content={data.post.meta.excerpt}>
 </svelte:head>
 
 <article>

@@ -29,20 +29,13 @@
 		grid-template-rows: auto 1fr;
 		background-color: white;
 		color: black;
-		border: 1px solid var(--color-grey);
 		border-radius: 0.25rem;
 		overflow: hidden;
-	}
-
-	/* Image Reset */
-	img {
-		display: block;
-		width: 100%;
-		height: auto;
+		box-shadow: var(--box-shadow);
 	}
 
 	.card-image {
-		aspect-ratio: 1;
+		aspect-ratio: 16/10;
 		object-fit: cover;
 	}
 
@@ -64,7 +57,6 @@
 
 	.card-button {
 		padding: 1rem;
-		/* background-color: var(--blue); */
 		color: white;
 		text-align: center;
 		text-decoration: none;

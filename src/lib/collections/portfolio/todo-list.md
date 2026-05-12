@@ -1,7 +1,7 @@
 ---
   title: TodoList Component
   date: 2026-04-21
-  excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum eum impedit obcaecati quisquam quam labore nisi explicabo laborum sed? Praesentium repellat eum rerum ea quibusdam deleniti harum quae qui, id molestias.
+  excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum eum impedit obcaecati quisquam quam?
   image: placeholder-1.png
 ---
 

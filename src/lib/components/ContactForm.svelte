@@ -33,15 +33,6 @@
     display: grid;
   }
 
-  label {
-    font-weight: 500;
-  }
-
-  input, textarea, button {
-    padding: 0.5rem;
-    font: inherit;
-  }
-
   button {
     padding: 1rem;
     background-color: var(--color-blue);
