@@ -15,6 +15,7 @@
   <div class="outer">
     <div class="inner">
       <div class="content">
+        <a href="/portfolio">&laquo; Back to Portfolio</a>
         <div>
           <h1>{data.post.meta.title}</h1>
           <div class="date">{formatDate(data.post.meta.date)}</div>
