@@ -19,7 +19,7 @@
 			<h3 class="card-title"><a {href}>{title}</a></h3>
 		</div>
 		<p class="card-excerpt">{excerpt}</p>
-		<a class="button justify-self-start bg-primary light" {href}>{buttonLabel}</a>
+		<a class="button justify-self-start bg-primary bg-primary-hover light" {href}>{buttonLabel}</a>
 	</div>
 </article>
 

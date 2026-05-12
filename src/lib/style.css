@@ -9,6 +9,8 @@
 	--color-gray: var(--color-grey);
 	--color-white: hsl(0, 0%, 100%);
 
+	--color-blue-hover: hsl(233, 54%, 50%);
+
 	--gradient-blue: linear-gradient(
 		hsla(233, 54%, 16%, 0.95),
 		hsla(234, 25%, 52%, 0.9)
@@ -71,13 +73,11 @@ button,
 	font: inherit;
 	/* font-size: 1.125rem; */
 	font-weight: bold;
-	transition: transform 100ms ease;
 }
 
 button:hover,
 .button:hover {
 	text-decoration: none;
-	transform: scale(0.99);
 }
 
 input,
@@ -186,6 +186,10 @@ code {
 	background-color: var(--color-blue);
 }
 
+.bg-primary-hover:hover {
+	background-color: var(--color-blue-hover);
+}
+
 .bg-accent {
 	background-color: var(--color-pink);
 }
@@ -208,6 +212,10 @@ code {
 
 .bg-gradient-accent-2 {
 	background-image: var(--gradient-purple);
+}
+
+.bg-gradient-accent:hover, .bg-gradient-accent-2:hover {
+	outline: 2px solid var(--color-white);
 }
 
 .bg-background-neutral {

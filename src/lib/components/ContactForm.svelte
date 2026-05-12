@@ -19,7 +19,7 @@
     <textarea name="message" id="message" rows="10" required></textarea>
   </div>
 
-  <button type="submit" class="justify-self-start bg-primary light">Send Message</button>
+  <button type="submit" class="justify-self-start bg-primary bg-primary-hover light">Send Message</button>
 </form>
 
 <style>
