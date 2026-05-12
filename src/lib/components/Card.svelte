@@ -19,7 +19,7 @@
 			<h3 class="card-title"><a {href}>{title}</a></h3>
 		</div>
 		<p class="card-excerpt">{excerpt}</p>
-		<a class="card-button bg-primary" {href}>{buttonLabel}</a>
+		<a class="button justify-self-start bg-primary light" {href}>{buttonLabel}</a>
 	</div>
 </article>
 
@@ -53,15 +53,6 @@
 
 	.card-title {
 		margin: 0;
-	}
-
-	.card-button {
-		padding: 1rem;
-		color: white;
-		text-align: center;
-		text-decoration: none;
-		font-weight: bold;
-		border-radius: 0.25rem;
 	}
 
 	.card-excerpt {

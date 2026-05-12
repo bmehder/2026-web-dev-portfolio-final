@@ -1,5 +1,5 @@
-<form>
-  <div>
+<form class="grid gap-1">
+  <div class="grid">
     <label for="name">Name</label>
     <input type="text" name="name" id="name" required />
   </div>
@@ -19,25 +19,15 @@
     <textarea name="message" id="message" rows="10" required></textarea>
   </div>
 
-  <button type="submit">Send Message</button>
+  <button type="submit" class="justify-self-start bg-primary light">Send Message</button>
 </form>
 
 <style>
   form {
     max-width: 32rem;
-    display: grid;
-    gap: 0.5rem;
   }
 
   div {
     display: grid;
-  }
-
-  button {
-    padding: 1rem;
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    border: none;
-    border-radius: 0.5rem;
   }
 </style>
