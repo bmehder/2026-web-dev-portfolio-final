@@ -17,15 +17,17 @@
 			<HeadingBox></HeadingBox>
 			<Box
 				icon={AnimationIcon}
-				heading="Animation"
+				heading="Portfolio"
 				description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
 				href="/portfolio"
+				linkText="View Portfolio"
 			></Box>
 			<Box
 				icon={DesignIcon}
-				heading="Design"
+				heading="Blog"
 				description="Create beautiful, usable interfaces to help shape the future of how the web looks."
-				href="/"
+				href="/blog"
+				linkText="Read Blog"
 			></Box>
 			<Box
 				icon={PhotographyIcon}

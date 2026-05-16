@@ -1,8 +1,8 @@
 ---
 title: Exploring the Quiet Corners of Code
 date: 2026-04-07
-excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti. Eligendi recusandae illum deserunt voluptate atque modi nemo, cumque distinctio natus vero praesentium adipisci quidem ducimus consequatur eaque tempora.
-image: placeholder-3.png
+excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti. Eligendi recusandae illum deserunt voluptate atque modi nemo.
+image: placeholder-9.png
 ---
 
 ## Heading 2

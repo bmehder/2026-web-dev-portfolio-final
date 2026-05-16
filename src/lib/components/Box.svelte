@@ -1,12 +1,12 @@
 <script>
-  let { icon, heading, description, href } = $props()
+  let { icon, heading, description, href, linkText = "Get Started" } = $props()
 </script>
 
 <div class="bg-light">
   <img src={icon} alt="">
   <h3>{heading}</h3>
   <p class="neutral">{description}</p>
-  <a {href}>Get Started</a>
+  <a {href}>{linkText}</a>
 </div>
 
 <style>
