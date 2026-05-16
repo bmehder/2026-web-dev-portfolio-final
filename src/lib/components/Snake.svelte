@@ -113,6 +113,7 @@
 		snake = [{ x: 10, y: 10 }]
 		direction = "right"
 		isGameOver = false
+    interval = 250
 	}
 
 	$effect(() => {
