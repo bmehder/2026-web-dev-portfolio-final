@@ -33,14 +33,14 @@ The web evolved from linked documents into a full software platform.
 # 2. The Birth of HTML (1991–1995)
 
 ## Topics
-- Tim Berners-Lee and CERN
+- [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) and CERN
 - HTML as a document format
-- The first websites
+- [The first website](https://info.cern.ch/)
 - Early tags:
   - `<h1>`
   - `<p>`
   - `<a>`
-  - `<table>`
+  - `<table>` ([documentation](https://www.w3schools.com/html/html_tables.asp))
 - No CSS
 - No JavaScript
 
