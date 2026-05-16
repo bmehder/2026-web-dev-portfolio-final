@@ -2,7 +2,7 @@
   title: History of Frontend
   date: 2026-05-11
   excerpt: A history of frontend web development.
-  image: placeholder-2.png
+  image: placeholder-3.png
 ---
 
 # The History of Front-End Web Development
