@@ -9,8 +9,6 @@
 	let { children } = $props()
 
 	let scrollY = $state()
-
-	$inspect(scrollY)
 </script>
 
 <svelte:head>
