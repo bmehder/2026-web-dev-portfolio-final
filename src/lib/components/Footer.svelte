@@ -46,7 +46,7 @@
 
 				<ul>
 					<li>
-						<a href="/">GitHub</a>
+						<a href="https://github.com/bmehder/2026-web-dev-portfolio-final" target="_blank">GitHub</a>
 					</li>
 
 					<li>
