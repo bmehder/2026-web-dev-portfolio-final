@@ -110,9 +110,8 @@
 		width: 16rem;
 		display: grid;
 		gap: 0.5rem;
-		/* margin-inline: auto; */
 		padding: 0.5rem;
-		background-color: black;
+		background-color: var(--color-blue);
 		color: white;
 		border-radius: 0.5rem;
 	}
@@ -123,6 +122,7 @@
 		justify-content: end;
 		align-items: end;
 		padding: 0.5rem;
+		background-color: #222;
 		font-size: 1.5rem;
 		word-break: break-all;
 		border: 1px solid;
