@@ -12,7 +12,7 @@
 
 <style>
   .outer {
-    background-image: url(/hero-2.png);
+    background-image: url(/hero-2.jpg);
     background-size: cover;
     background-position: center;
     color: var(--color-white);
