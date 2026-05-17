@@ -10,29 +10,29 @@
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-## The original web philosophy:
+### The original web philosophy:
 - The web changed so dramatically in 30 years 
   - Documents, not applications
   - Hyperlinks over interactivity
 
-## Sequence
+### Sequence
 - Early HTML pages
 - Flash-era websites
 - jQuery sites
 - Modern React/Vue/Svelte applications
 
-## Main Point
+### Main Point
 The web evolved from linked documents into a full software platform.
 
 ---
 
-# Part I — The Static Web
+## Part I — The Static Web
 
-# 2. The Birth of HTML (1991–1995)
+## 2. The Birth of HTML (1991–1995)
 
-## Topics
+### Topics
 - [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) and CERN
 - HTML as a document format
 - [The first website](https://info.cern.ch/)
@@ -44,18 +44,18 @@ The web evolved from linked documents into a full software platform.
 - No CSS
 - No JavaScript
 
-## Early Browsers
+### Early Browsers
 - [Mosaic](https://en.wikipedia.org/wiki/NCSA_Mosaic)
 - [Netscape Navigator](https://en.wikipedia.org/wiki/Netscape_Navigator)
 
-## Main Point
+### Main Point
 The web started as a system for sharing academic documents.
 
 ---
 
-# 3. The Browser Wars (Mid-1990s)
+## 3. The Browser Wars (Mid-1990s)
 
-## Topics
+### Topics
 - Microsoft vs Netscape
 - Proprietary browser features
 - “Best viewed in Netscape”
@@ -64,21 +64,21 @@ The web started as a system for sharing academic documents.
 - Frames
 - Inline styles and messy markup
 
-## Early Dynamic Features
+### Early Dynamic Features
 - [Marquee tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee)
 - Blink tags
 - Image rollovers
 
-## Main Point
+### Main Point
 Developers stretched HTML far beyond its original purpose.
 
 ---
 
-# Part II — Styling and Interactivity
+## Part II — Styling and Interactivity
 
-# 4. CSS Changes Everything (1996–2005)
+## 4. CSS Changes Everything (1996–2005)
 
-## Topics
+### Topics
 - Why CSS was invented
 - Separation of content and presentation
 - CSS1 and CSS2
@@ -86,7 +86,7 @@ Developers stretched HTML far beyond its original purpose.
 - Positioning systems
 - Typography improvements
 
-## Problems of the Era
+### Problems of the Era
 - Browser inconsistencies
 - Internet Explorer bugs
 - CSS hacks
@@ -97,14 +97,14 @@ Developers stretched HTML far beyond its original purpose.
 <![endif]
 ```
 
-## Main Point
+### Main Point
 CSS transformed the web from plain documents into designed experiences.
 
 ---
 
-# 5. JavaScript Arrives (1995+)
+## 5. JavaScript Arrives (1995+)
 
-## Topics
+### Topics
 - Created at Netscape by Brendan Eich
 - Originally developed in about **10 days**😱
 - Early uses:
@@ -113,41 +113,41 @@ CSS transformed the web from plain documents into designed experiences.
   - Dropdown menus
   - Image swaps
 
-## Important Clarification
+### Important Clarification
 - Java is not JavaScript
 
-## Common Patterns
+### Common Patterns
 - Inline `onclick`
 - `<script>` tags
 - Global variables everywhere
 
-## Main Point
+### Main Point
 JavaScript introduced behavior and interactivity to the web.
 
 ---
 
-# Part III — The Dynamic Web
+## Part III — The Dynamic Web
 
-# 6. AJAX and Web Applications (2004–2010)
+## 6. AJAX and Web Applications (2004–2010)
 
-## Topics
+### Topics
 - Moving beyond full page reloads
 - XMLHttpRequest
 - Gmail as a turning point
 - Google Maps and dynamic interfaces
 
-## Technologies
+### Technologies
 - AJAX
 - XML
 - JSON
 - REST APIs
 
-## Main Point
+### Main Point
 The web began to feel like software instead of collections of pages.
 
 ---
 
-# 7. The jQuery Era
+## 7. The jQuery Era
 
 ```js
 $('.button').click(function () {
@@ -155,59 +155,59 @@ $('.button').click(function () {
 })
 ```
 
-## Topics
+### Topics
 - Vanilla JavaScript was difficult
 - Browser inconsistencies
 - DOM manipulation challenges
 
-## jQuery Contributions
+### jQuery Contributions
 - Easier selectors
 - Simpler event handling
 - AJAX helpers
 - Animations
 
-## Famous Philosophy
+### Famous Philosophy
 > “Write less, do more.”
 
-## Ecosystem
+### Ecosystem
 - Massive plugin ecosystem
 - Heavy influence on WordPress development
 
-## Main Point
+### Main Point
 jQuery standardized front-end development across browsers.
 
 ---
 
-# Part IV — The Rich Internet Era
+## Part IV — The Rich Internet Era
 
-# 8. Flash, Silverlight, and Competing Futures
+## 8. Flash, Silverlight, and Competing Futures
 
-## Topics
+### Topics
 - HTML was insufficient for apps
 - [Flash](https://en.wikipedia.org/wiki/Adobe_Flash) games and animations
 - Full-screen interactive experiences
 - Video before HTML5
 
-## Technologies
+### Technologies
 - Adobe Flash
 - Microsoft Silverlight
 
-## Why They Failed
+### Why They Failed
 - Poor mobile support
 - Security issues
 - Proprietary ecosystems
 - Open web standards improved
 
-## Main Point
+### Main Point
 The web nearly became dependent on proprietary platforms.
 
 ---
 
-# Part V — Modern Front-End Engineering
+## Part V — Modern Front-End Engineering
 
-# 9. HTML5 and the Modern Browser (2010s)
+## 9. HTML5 and the Modern Browser (2010s)
 
-## Topics
+### Topics
 - Semantic HTML
 - Native video and audio
 - Canvas
@@ -215,47 +215,48 @@ The web nearly became dependent on proprietary platforms.
 - Local storage
 - Modern browser APIs
 
-## Responsive Design
+### Responsive Design
 - Mobile-first design
 - Media queries
 
-## CSS Improvements
+### CSS Improvements
 - Flexbox
 - CSS Grid
 
-## Main Point
+### Main Point
 Browsers evolved into powerful application runtimes.
 
 ---
 
-# 10. The Rise of Frameworks
+## 10. The Rise of Frameworks
 
-## Topics
+### Topics
 - Complexity explosion
 - State management problems
 - Component-based architecture
+- [NodeJS](https://nodejs.org/en)
 
-## Framework Timeline
+### Framework Timeline
 - [AngularJS](https://en.wikipedia.org/wiki/AngularJS)
 - [React](https://react.dev/)
 - [Vue](https://vuejs.org/)
 - Svelte
 
-## Core Concepts
+### Core Concepts
 - Virtual DOM
 - Reactivity
 - Components
 - Hydration
 - Single Page Applications (SPAs)
 
-## Main Point
+### Main Point
 Front-end development became a form of software engineering.
 
 ---
 
-# 11. Build Tools and the Toolchain Explosion
+## 11. Build Tools and the Toolchain Explosion
 
-## Topics
+### Topics
 - npm
 - Bundlers
 - Transpilers
@@ -264,56 +265,56 @@ Front-end development became a form of software engineering.
 - Webpack
 - [Vite](https://vite.dev/)
 
-## Discussion Points
+### Discussion Points
 - *"JavaScript fatigue"*
 - Complexity versus capability
 - Massive dependency trees
 
-## Humorous Angle
+### Humorous Angle
 - “Installing 1,200 npm packages to center a div.”
 
-## Main Point
+### Main Point
 Modern front-end tooling became extremely powerful, but also extremely complex.
 
 ---
 
-# Part VI — The Present and Future
+## Part VI — The Present and Future
 
-# 12. The Return to Simplicity?
+## 12. The Return to Simplicity?
 
-## Topics
+### Topics
 - Server-side rendering revival
 - [Islands architecture](https://astro.build/)
 - HTMX
 - Web Components
 - Simpler tooling movements
 
-## Current Trends
+### Current Trends
 - Performance focus
 - Accessibility awareness
 - Progressive enhancement returning
 
-## Main Point
+### Main Point
 The industry is rediscovering ideas from the early web.
 
 ---
 
-# 13. The Future of Front-End
+## 13. The Future of Front-End
 
-## Questions to Explore
+### Questions to Explore
 - Will frameworks matter as much?
 - Will HTML survive another 30 years?
 - What will the big new thing be?
 
 ---
 
-# 14. Conclusion
+## 14. Conclusion
 
-## Final Reflection
+### Final Reflection
 Despite decades of change:
 - HTML still structures the web
 - CSS still styles the web
 - JavaScript still powers browser interactivity
 
-## Closing Line
+### Closing Line
 > “The modern web is still built on the same three technologies that started it all.”

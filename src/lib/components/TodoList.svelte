@@ -116,6 +116,7 @@
 		align-items: center;
 		gap: 1rem;
 		padding-block: 0.25rem;
+		color: unset;
 	}
 
 	.update-btn {

@@ -54,7 +54,7 @@
 					</li>
 
 					<li>
-						<a href="/">Xtwitter</a>
+						<a href="/">Twitter</a>
 					</li>
 				</ul>
 			</section>
@@ -69,5 +69,9 @@
 			grid-template-columns: 2fr 1fr 1fr;
 			gap: 3rem;
 		}
+	}
+
+	h2, p {
+		color: var(--color-white);
 	}
 </style>

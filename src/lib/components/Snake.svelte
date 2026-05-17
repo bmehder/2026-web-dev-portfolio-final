@@ -136,7 +136,7 @@
 		<p>Interval: {interval}ms</p>
 		{#if isGameOver}
 			<p>Game Over</p>
-			<button onclick={reset}>New Game</button>
+			<button class="bg-primary bg-primary-hover light" onclick={reset}>New Game</button>
 		{/if}
 	</div>
 </div>

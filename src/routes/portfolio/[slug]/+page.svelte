@@ -11,7 +11,7 @@
 	<meta name="description" content={data.post.meta.excerpt}>
 </svelte:head>
 
-<article>
+<article class="post">
   <div class="outer">
     <div class="inner">
       <div class="content">

@@ -2,7 +2,7 @@
   title: Counter Component
   date: 2026-04-21
   excerpt: This is the classic Reactive User Interface (UI) example using a Svelte component.
-  image: placeholder-2.png
+  image: placeholder-5.png
 ---
 
 <script>

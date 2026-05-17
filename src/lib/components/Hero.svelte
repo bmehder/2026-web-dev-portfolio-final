@@ -29,6 +29,10 @@
   }
 
   h1 {
+    color: var(--color-white);
+  }
+
+  h1 {
     margin-top: 0;
   }
 

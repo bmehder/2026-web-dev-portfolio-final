@@ -2,7 +2,7 @@
   title: Calculator
   date: 2026-05-07
   excerpt: This is a calculator app built in HTML, CSS, JavaScript.
-  image: placeholder-1.png
+  image: placeholder-6.png
 ---
 
 <script>
