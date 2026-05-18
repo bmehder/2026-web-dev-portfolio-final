@@ -4,7 +4,7 @@ import { createHighlighter } from 'shiki'
 
 const highlighter = await createHighlighter({
 	themes: ['github-dark'],
-	langs: ['svelte', 'js', 'html', 'css'],
+	langs: ['svelte', 'js', 'html', 'css', 'elm', 'gleam', 'json'],
 })
 
 const config = defineConfig({

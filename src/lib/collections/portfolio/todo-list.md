@@ -14,8 +14,8 @@
 <p>This is some html.</p>
 
 <div class="grid auto-fill gap-3">
-  <TodoList />
-  <TodoList title="List Two" />
+  <TodoList storageKey="Personal" />
+  <TodoList storageKey="Grocery" title="Grocery List" />
   <TodoList title="My List" />
 </div>
 

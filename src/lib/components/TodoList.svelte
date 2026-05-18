@@ -1,72 +1,85 @@
 <script>
-	let { title = "Todo List" } = $props()
-	
-	let todos = $state([
-		// {task: "Learn", id: 0, isCompleted: false},
-		// {task: "Play", id: 1, isCompleted: true},
-		// {task: "Eat", id: 2, isCompleted: false}, 
-	])
-	let todoDraft = $state("")
-	
+	let { title = 'Todo List', storageKey = null } = $props()
+
+	let todos = $state([])
+	let todoDraft = $state('')
+
+	const loadTodos = () => {
+		if (typeof localStorage === 'undefined' || storageKey === null) {
+			return []
+		}
+
+		const storedData = localStorage.getItem(storageKey)
+
+		if (storedData == null) {
+			return []
+		}
+		
+		try {
+			return JSON.parse(storedData)
+		} catch (err) {
+			console.error(err)
+			return []
+		}
+	}
+
+	todos = loadTodos()
+
 	const handleSubmit = event => {
 		event.preventDefault()
 
-		if (todoDraft.trim() !== "") {
+		if (todoDraft.trim() !== '') {
 			todos = [
 				...todos,
 				{
 					task: todoDraft,
 					id: new Date().getTime(),
-					isCompleted: false
-				}
+					isCompleted: false,
+				},
 			]
-	
-			todoDraft = ''	
+
+			todoDraft = ''
 		}
 	}
 
 	const handleDelete = (event, id) => {
-		todos = todos.filter(todo => todo.id !== id) 
+		todos = todos.filter(todo => todo.id !== id)
 	}
 
-	const handleUpdate = (event, id) => {		
-		todos = todos.map(
-			todo => todo.id === id
-				? {...todo, isCompleted: !todo.isCompleted}
-				: todo
+	const handleUpdate = (event, id) => {
+		todos = todos.map(todo =>
+			todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo,
 		)
 	}
 
-	$inspect(todoDraft)
-	$inspect(todos)
+	$effect(() => {
+		if (typeof localStorage === 'undefined' || storageKey === null) {
+			return
+		}
+
+		localStorage.setItem(storageKey, JSON.stringify(todos))
+	})
 </script>
 
 <div class="todo-list">
 	<h3>{title}</h3>
-	
+
 	<form onsubmit={handleSubmit}>
-		<input 
-			type="text"
-			bind:value="{todoDraft}"
-			placeholder="Add new todo..."
-		/>
+		<input type="text" bind:value={todoDraft} placeholder="Add new todo..." />
 		<button type="submit">+</button>
 	</form>
 
-	<ul> 
+	<ul>
 		{#each todos as todo}
 			<li>
 				<button
-					class={{"update-btn": true, "line-through": todo.isCompleted}}
+					class={{ 'update-btn': true, 'line-through': todo.isCompleted }}
 					onclick={event => handleUpdate(event, todo.id)}
 				>
 					{todo.task}
 				</button>
-				
-				<button
-					class="delete-btn"
-					onclick={event => handleDelete(event, todo.id)}
-				>
+
+				<button class="delete-btn" onclick={event => handleDelete(event, todo.id)}>
 					x
 				</button>
 			</li>
@@ -85,10 +98,10 @@
 	h3 {
 		margin-top: 0;
 	}
-	
+
 	form {
 		display: grid;
-		grid-template-columns: auto 4ch; 
+		grid-template-columns: auto 4ch;
 		gap: 0.25rem;
 	}
 
@@ -96,7 +109,7 @@
 		min-width: 0;
 		padding: 0.5rem;
 	}
-	
+
 	button {
 		font: inherit;
 		padding-inline: 1rem;
@@ -125,7 +138,7 @@
 		color: inherit;
 		border: none;
 	}
-	
+
 	.todos-count {
 		text-align: center;
 	}
