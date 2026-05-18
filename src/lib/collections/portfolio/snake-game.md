@@ -9,4 +9,7 @@
   import Snake from "$lib/components/Snake.svelte"
 </script>
 
+## Insructions
+Move the snake using the arrow keys on your keyboard to try to eat the fruit. If the snake hits a wall or itself, the game is over.
+
 <Snake />
