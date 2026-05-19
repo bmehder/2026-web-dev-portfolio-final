@@ -39,6 +39,12 @@
 	let direction = $state('right')
 	let isGameOver = $state(true)
 	let interval = $state(250)
+	let score = $state(0)
+	let highScore = $state(0)
+
+	if (typeof localStorage !== 'undefined') {
+		highScore = Number(localStorage.getItem('snake-high-score')) ?? 0
+	}
 
 	const moveSnake = () => {
 		if (isGameOver) return
@@ -79,6 +85,8 @@
 				y: Math.floor(Math.random() * GRID_SIZE),
 			}
 
+			score = score + 1
+
 			interval = interval - 10
 
 			return
@@ -111,6 +119,13 @@
 			clearInterval(intervalId)
 		}
 	})
+
+	$effect(() => {
+		if (typeof localStorage !== 'undefined' && score > highScore) {
+			highScore = score
+			localStorage.setItem('snake-high-score', score)
+		}
+	})
 </script>
 
 <svelte:window onkeydown={handleKeydown} />
@@ -133,10 +148,16 @@
 	</div>
 
 	<div>
-		<p>Interval: {interval}ms</p>
+		<div class="flex align-items-center gap-1-5 justify-content-center">
+			<p>Score: {score}</p>
+			<p>High Score: {highScore}</p>
+			<p>Speed: {interval}ms</p>
+		</div>
 		{#if isGameOver}
 			<p>Game Over</p>
-			<button class="bg-primary bg-primary-hover light" onclick={reset}>New Game</button>
+			<button class="bg-primary bg-primary-hover light" onclick={reset}
+				>New Game</button
+			>
 		{/if}
 	</div>
 </div>
