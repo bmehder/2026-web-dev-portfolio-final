@@ -42,6 +42,15 @@
 	let score = $state(0)
 	let highScore = $state(0)
 
+	const reset = () => {
+		food = { x: 5, y: 5 }
+		snake = [{ x: 10, y: 10 }]
+		direction = 'right'
+		isGameOver = false
+		interval = 250
+		score = 0
+	}
+
 	if (typeof localStorage !== 'undefined') {
 		highScore = Number(localStorage.getItem('snake-high-score')) ?? 0
 	}
@@ -104,14 +113,6 @@
 		direction = nextDirection
 	}
 
-	const reset = () => {
-		food = { x: 5, y: 5 }
-		snake = [{ x: 10, y: 10 }]
-		direction = 'right'
-		isGameOver = false
-		interval = 250
-	}
-
 	$effect(() => {
 		const intervalId = setInterval(moveSnake, interval)
 
@@ -148,7 +149,7 @@
 	</div>
 
 	<div>
-		<div class="flex align-items-center gap-1-5 justify-content-center">
+		<div class="flex align-items-center justify-content-center gap-1-5">
 			<p>Score: {score}</p>
 			<p>High Score: {highScore}</p>
 			<p>Speed: {interval}ms</p>
