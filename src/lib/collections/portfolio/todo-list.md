@@ -19,4 +19,8 @@
   <TodoList title="My List" />
 </div>
 
-<p>This is some html too.</p>
+<p>You can optionally persist each list to Local Storage by providing a storageKey prop.</p>
+
+```js
+<TodoList storageKey="Grocery" title="Grocery List" />
+```

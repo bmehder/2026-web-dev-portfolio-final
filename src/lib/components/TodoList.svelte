@@ -5,19 +5,9 @@
 	let todoDraft = $state('')
 
 	const loadTodos = () => {
-		if (typeof localStorage === 'undefined' || storageKey === null) {
-			return []
-		}
-
-		const storedData = localStorage.getItem(storageKey)
-
-		if (storedData == null) {
-			return []
-		}
-		
 		try {
-			return JSON.parse(storedData)
-		} catch (err) {
+			return JSON.parse(localStorage.getItem(storageKey) ?? '[]')
+		} catch(err) {
 			console.error(err)
 			return []
 		}

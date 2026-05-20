@@ -5,8 +5,6 @@ excerpt: A simple loadTodos() function reveals how JavaScript quietly mixes effe
 image: placeholder-1.png
 ---
 
-*Estimated read time: 12 min*
-
 At first glance, this JavaScript function seems fairly straightforward:
 
 ```js
