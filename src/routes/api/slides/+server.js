@@ -1,4 +1,6 @@
-export const slides = [
+import { json } from '@sveltejs/kit'
+
+const slides = [
 	{
 		image: 'https://picsum.photos/id/1018/1600/900',
 		alt: '',
@@ -24,3 +26,5 @@ export const slides = [
 		href: '/blog',
 	},
 ]
+
+export const GET = () => json(slides)

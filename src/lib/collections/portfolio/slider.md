@@ -6,8 +6,8 @@
 ---
 
 <script>
-  import { slides } from "$lib/data.js"
   import Slider from "$lib/components/Slider.svelte"
 </script>
 
-<Slider {slides} />
+View the slider [here](/slider).
+<!-- <Slider {slides} /> -->

@@ -1,10 +1,8 @@
 <script>
-	let { slides } = $props()
+	let { slides, borderRadius = '1.5rem', alignContent = 'end' } = $props()
 
 	let current = $state(0)
-	let offset = $derived(
-		-current * 100
-	)
+	let offset = $derived(-current * 100)
 
 	const prev = () => {
 		if (current === 0) {
@@ -13,7 +11,7 @@
 			current = current - 1
 		}
 	}
-	
+
 	const next = () => {
 		if (current === slides.length - 1) {
 			current = 0
@@ -23,13 +21,13 @@
 	}
 </script>
 
-<div class="slider">
+<div class="slider" style="border-radius: {borderRadius};">
 	<div class="track" style="transform: translateX({offset}%);">
 		{#each slides as slide}
 			<div class="slide">
 				<img src={slide.image} alt={slide.alt} />
 				<div class="overlay"></div>
-				<div class="content">
+				<div class="content" style="align-content: {alignContent}">
 					<div class="h2">{slide.title}</div>
 					<p>{slide.text}</p>
 					<a class="button" href={slide.href}>{slide.buttonLabel}</a>
@@ -48,9 +46,8 @@
 	.slider {
 		display: grid;
 		overflow: hidden;
-		border-radius: 1.5rem;
 	}
-	
+
 	.track {
 		min-inline-size: 0;
 		grid-column: 1;
@@ -67,7 +64,7 @@
 
 	.slide > * {
 		grid-column: 1;
-		grid-row: 1;		
+		grid-row: 1;
 	}
 
 	img {
@@ -80,7 +77,7 @@
 			to bottom,
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.8)
-		); 
+		);
 	}
 
 	.controls {
@@ -93,21 +90,20 @@
 
 	.content {
 		display: grid;
-		align-content: end;
 		padding: clamp(1.5rem, 4vw, 4.5rem);
 	}
 
-  .h2 {
-    color: var(--color-white);
-    font-size: clamp(1.5rem, 4vw, 4.5rem);
-  }
-  
-  p {
-    color: var(--color-white);
-  }
+	.h2 {
+		color: var(--color-white);
+		font-size: clamp(1.5rem, 4vw, 4.5rem);
+	}
 
-  .button {
-    justify-self: start;
-    background-color: var(--color-white);
-  }
+	p {
+		color: var(--color-white);
+	}
+
+	.button {
+		justify-self: start;
+		background-color: var(--color-white);
+	}
 </style>
