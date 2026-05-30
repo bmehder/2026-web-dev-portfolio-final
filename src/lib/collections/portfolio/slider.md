@@ -6,8 +6,11 @@
 ---
 
 <script>
+  import { page } from "$app/state"
   import Slider from "$lib/components/Slider.svelte"
+
 </script>
 
-View the slider [here](/slider).
-<!-- <Slider {slides} /> -->
+<Slider slides={page.data.slides} />
+
+[View a full width slider](/slider).

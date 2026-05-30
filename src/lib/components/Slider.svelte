@@ -1,5 +1,11 @@
 <script>
-	let { slides, borderRadius = '1.5rem', alignContent = 'end' } = $props()
+	let {
+		slides,
+		borderRadius = '1.5rem',
+		alignContent = 'end',
+		justifyContent = 'start',
+		padding = 'clamp(1.5rem, 4vw, 4.5rem)',
+	} = $props()
 
 	let current = $state(0)
 	let offset = $derived(-current * 100)
@@ -27,7 +33,10 @@
 			<div class="slide">
 				<img src={slide.image} alt={slide.alt} />
 				<div class="overlay"></div>
-				<div class="content" style="align-content: {alignContent}">
+				<div
+					class="content"
+					style="align-content: {alignContent}; justify-content: {justifyContent}; padding: {padding};"
+				>
 					<div class="h2">{slide.title}</div>
 					<p>{slide.text}</p>
 					<a class="button" href={slide.href}>{slide.buttonLabel}</a>
@@ -53,7 +62,6 @@
 		grid-column: 1;
 		grid-row: 1;
 		display: flex;
-		/* transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 		transition: transform 500ms ease;
 	}
 
@@ -90,7 +98,6 @@
 
 	.content {
 		display: grid;
-		padding: clamp(1.5rem, 4vw, 4.5rem);
 	}
 
 	.h2 {
