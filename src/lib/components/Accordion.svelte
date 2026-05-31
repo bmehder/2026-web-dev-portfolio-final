@@ -18,7 +18,7 @@
 		padding-block: 1rem;
 	}
 
-	summary {
+	/* summary {
 		position: relative;
 		margin-block: 0.5rem;
 		padding: 0.5rem;
@@ -33,6 +33,28 @@
 	
 	details[open] summary::marker {
 		content: "-";
+		font-weight: bold;
+	} */
+
+	summary {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		margin-block: 0.5rem;
+		padding: 0.5rem;
+
+		outline: 1px solid var(--color-gray);
+		border-radius: 0.25rem;
+	}
+	
+	details summary::after {
+		content: '+';
+		font-weight: bold;
+	}
+	
+	details[open] summary::after {
+		content: '-';
 		font-weight: bold;
 	}
 </style>
