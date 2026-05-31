@@ -1,16 +1,22 @@
 <script>
+	import Spinner from './Spinner.svelte'
+
 	const dogsEndpoint = 'https://dog.ceo/api/breeds/image/random/'
 
 	let dogs = $state([])
   let count = $state(1)
+  let isLoading = $state(false)
 
 	const getDogs = event => {
     event?.preventDefault()
+
+    isLoading = true
 
 		return fetch(dogsEndpoint + count)
 			.then(response => response.json())
 			.then(data => (dogs = [...dogs, ...data.message]))
 			.catch(err => console.error('Whoops:', err))
+      .finally(() => isLoading = false)
   }
 
   const reset = () => {
@@ -38,6 +44,10 @@
 		{#each dogs as dog}
 			<img src={dog} alt="" />
 		{/each}
+
+    {#if isLoading}
+      <Spinner />
+    {/if}
 	</div>
 </div>
 
