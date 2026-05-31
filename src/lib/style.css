@@ -3,6 +3,8 @@
 /* CSS Custom Properties (CSS Variables) */
 
 :root {
+	interpolate-size: allow-keywords;
+	
 	--color-blue: hsl(233, 54%, 16%);
 	--color-pink: hsl(341, 92%, 62%);
 	--color-grey: hsl(232, 10%, 56%);
@@ -175,6 +177,19 @@ code {
 pre,
 code {
 	max-width: 100%;
+}
+
+details::details-content {
+	block-size: 0;
+	overflow: hidden;
+
+	transition:
+		block-size 250ms ease,
+		content-visibility 250ms allow-discrete;
+}
+
+details[open]::details-content {
+	block-size: auto;
 }
 
 /* Utility Classes */
