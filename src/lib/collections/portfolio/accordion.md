@@ -6,9 +6,13 @@
 ---
 
 <script>
+  import { page } from "$app/state"
   import Accordion from "$lib/components/Accordion.svelte"
 </script>
 
-<Accordion title="What's this, then?">
-  <p>This is some content.</p>
-</Accordion>
+{#each page.data.faqs as {title, content, name}}
+  <Accordion {title} {name}>
+    {content}
+  </Accordion>
+{/each}
+

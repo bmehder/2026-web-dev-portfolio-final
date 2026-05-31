@@ -5,20 +5,34 @@
 <details {name}>
 	<summary>{title}</summary>
 	{#if !!children}
-		{@render children()}
+		<div>{@render children()}</div>
 	{/if}
 </details>
 
 <style>
 	details::details-content {
-		block-size: 0;
-		overflow: hidden;
-
-		transition: block-size 250ms ease,
-		content-visibility 250ms allow-discrete;
+		padding-inline: 1rem;
 	}
 
-	details[open]::details-content {
-		block-size: auto;
+	div {
+		padding-block: 1rem;
+	}
+
+	summary {
+		position: relative;
+		margin-block: 0.5rem;
+		padding: 0.5rem;
+		outline: 1px solid var(--color-gray);
+		border-radius: 0.25rem;
+	}
+
+	summary::marker {
+		content: "+";
+		font-weight: bold;
+	}
+	
+	details[open] summary::marker {
+		content: "-";
+		font-weight: bold;
 	}
 </style>
