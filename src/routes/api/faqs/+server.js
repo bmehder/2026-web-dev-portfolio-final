@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit'
 
-export const faqs = [
+const faqs = [
 	{
 		title: 'What is an accordion component?',
 		content:
@@ -33,4 +33,4 @@ export const faqs = [
 	},
 ]
 
-export const GET = () => json(slides)
+export const GET = () => json(faqs)
