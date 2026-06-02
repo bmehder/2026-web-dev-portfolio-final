@@ -4,7 +4,7 @@
 
 :root {
 	interpolate-size: allow-keywords;
-	
+
 	--color-blue: hsl(233, 54%, 16%);
 	--color-pink: hsl(341, 92%, 62%);
 	--color-grey: hsl(232, 10%, 56%);
@@ -139,6 +139,7 @@ button,
 	font: inherit;
 	/* font-size: 1.125rem; */
 	font-weight: bold;
+	cursor: pointer;
 }
 
 button:hover,
@@ -234,6 +235,14 @@ details[open]::details-content {
 	justify-self: start;
 }
 
+.grid-column-1 {
+	grid-column: 1;
+}
+
+.grid-row-1 {
+	grid-row: 1;
+}
+
 .gap-0-5 {
 	gap: 0.5rem;
 }
@@ -251,7 +260,21 @@ details[open]::details-content {
 }
 
 .auto-fill {
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+	--auto-fill-min: 16rem;
+
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(min(var(--auto-fill-min), 100%), 1fr)
+	);
+}
+
+.auto-fit {
+	--auto-fit-min: 16rem;
+
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(min(var(--auto-fit-min), 100%), 1fr)
+	);
 }
 
 .float-right {
