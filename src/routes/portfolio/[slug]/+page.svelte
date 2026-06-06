@@ -36,9 +36,9 @@
     gap: 1.5rem;
   }
 
-  img {
+  /* img {
     max-width: 32rem;
-  }
+  } */
 
   h1 {
     margin-bottom: 0;

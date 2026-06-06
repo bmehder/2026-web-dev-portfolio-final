@@ -1,4 +1,5 @@
 <script>
+	import { onNavigate } from '$app/navigation'
 	import '$lib/style.css'
 	import favicon from '$lib/assets/favicon.svg'
 	import NewHeader from '$lib/components/NewHeader.svelte'
@@ -19,3 +20,4 @@
 </div>
 
 <BackToTop scrollAmount="1000"></BackToTop>
+

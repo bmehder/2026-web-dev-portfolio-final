@@ -193,6 +193,10 @@ details[open]::details-content {
 	block-size: auto;
 }
 
+summary {
+	cursor: pointer;
+}
+
 /* Utility Classes */
 
 .page-wrapper {

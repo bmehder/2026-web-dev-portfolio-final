@@ -59,4 +59,8 @@
 	.card-excerpt {
 		font-size: 0.9rem;
 	}
+
+	img {
+		view-transition-name: image;
+	}
 </style>

@@ -1,17 +1,21 @@
 <script>
-  let { title } = $props()
+	let { title } = $props()
 </script>
 
 <div class="page-title">
-  <div class="outer">
-    <div class="inner">
-      <h1>{title}</h1>
-    </div>
-  </div>
+	<div class="outer">
+		<div class="inner">
+			<h1>{title}</h1>
+		</div>
+	</div>
 </div>
 
 <style>
-  .inner {
-    border-bottom: 1px solid;
-  }
+	.inner {
+		border-bottom: 1px solid;
+	}
+	
+  .page-title {
+		view-transition-name: page-title;
+	}
 </style>
