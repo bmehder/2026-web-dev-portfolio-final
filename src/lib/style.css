@@ -263,6 +263,9 @@ summary {
 	gap: 3rem;
 }
 
+/* Think of this like a function - auto_fill(min) */
+/* Set a custom min using:
+<div class="grid auto-fill gap-1" style="--auto-fill-min: 8rem;">...<div> */
 .auto-fill {
 	--auto-fill-min: 16rem;
 
@@ -281,12 +284,22 @@ summary {
 	);
 }
 
+.pile {
+	display: grid;
+	grid-template-areas: "pile";
+
+	> * {
+		grid-area: pile;
+	}
+}
+
 .float-right {
+	/* inline-size does not work in media queries. :-( */
 	@media (width > 48rem) {
-		max-width: 32rem;
+		max-inline-size: 32rem;
 		float: right;
-		margin-left: 1.5rem;
-		margin-bottom: 1.5rem;
+		margin-inline-start: 1.5rem;
+		margin-block-end: 1.5rem;
 	}
 }
 
