@@ -1,3 +1,5 @@
+// export const csr = true
+
 export function load() {
 	const posts = import.meta.glob('$lib/collections/portfolio/*.md', { eager: true })
 

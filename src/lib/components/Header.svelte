@@ -10,13 +10,13 @@
 		isOpen = false
 	}
 
-	$effect(() => {
-		document.body.style.overflow = isOpen ? 'hidden' : ''
+	// $effect(() => {
+	// 	document.body.style.overflow = isOpen ? 'hidden' : ''
 
-		return () => {
-			document.body.style.overflow = ''
-		}
-	})
+	// 	return () => {
+	// 		document.body.style.overflow = ''
+	// 	}
+	// })
 
 	afterNavigate(() => {
 		closeNav()

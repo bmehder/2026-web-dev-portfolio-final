@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/state'
+	import Close from '$lib/assets/icons/close.svg'
 	import Gallery from '$lib/components/Gallery.svelte'
 	import PageTitle from '$lib/components/PageTitle.svelte'
 </script>
@@ -73,7 +74,43 @@
 	<div class="outer">
 		<div class="inner">
 			<h2>Gallery</h2>
-			<Gallery images={page.data.gallery} />
+			<button commandfor="modal" command="show-popover">Open Gallery</button>
 		</div>
 	</div>
 </section>
+
+<div id="modal" class="modal" popover>
+	<button commandfor="modal" command="hide-popover">X</button>
+	<Gallery images={page.data.gallery} />
+</div>
+
+<style>
+	.modal {
+		position: relative;
+		background-color: transparent;
+		border: none;
+
+		button {
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			display: grid;
+			place-content: center;
+			inline-size: 3rem;
+			block-size: 3rem;
+			padding: 0.5rem;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			font-size: 1.5rem;
+			border-radius: 50%;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.7);
+			}
+		}
+
+		&::backdrop {
+			background-color: rgba(0, 0, 0, 0.9);
+		}
+	}
+</style>
