@@ -2,7 +2,7 @@
   title: SSR vs CSR vs SSG - Choosing the Right Rendering Strategy
   date: 2026-06-12
   excerpt: Understanding server-side rendering, client-side rendering, and static site generation—and when each approach makes sense.
-  image: placeholder-7.png
+  image: placeholder-8.png
 ---
 
 One of the most important architectural decisions when building a website is deciding **how pages are rendered**.
@@ -28,6 +28,17 @@ We'll examine how they work, their advantages and disadvantages, and when each o
 With server-side rendering, the server generates the HTML for each request.
 
 When a user visits a page:
+
+```text
+┌─────────┐     Request      ┌────────┐
+│ Browser │ ───────────────► │ Server │
+└─────────┘                  └────────┘
+      ▲                           │
+      │       Generated HTML      │
+      └───────────────────────────┘
+
+       ✓ Page displays immediately
+```
 
 ```text
 Browser
@@ -76,6 +87,21 @@ With client-side rendering, the browser receives a JavaScript application that b
 The server often sends very little HTML initially.
 
 ```text
+┌─────────┐      JS Bundle      ┌────────┐
+│ Browser │ ◄────────────────── │ Server │
+└─────────┘                     └────────┘
+      │
+      ▼
+ Execute JavaScript
+      │
+      ▼
+ Fetch Data
+      │
+      ▼
+ Render Page
+```
+
+```text
 Browser
 ↓
 Downloads JavaScript
@@ -121,6 +147,23 @@ Examples include products such as Gmail, Trello, Notion, and Figma.
 Static site generation produces pages during the build process.
 
 Instead of generating pages on demand, the pages already exist before visitors arrive.
+
+```text
+        Build Time
+            │
+            ▼
+      Generate HTML
+            │
+            ▼
+      Deploy to CDN
+            │
+            ▼
+       ┌─────────┐
+       │ Browser │
+       └─────────┘
+
+✓ Instant delivery
+```
 
 ```text
 Build Site
@@ -291,6 +334,17 @@ SSR and SSG often avoid these issues because each navigation creates a fresh pag
 Frameworks such as SvelteKit support all three approaches.
 
 A single project can even use multiple strategies:
+
+```text
+          ┌─────────────────┐
+          │   SvelteKit     │
+          └─────────────────┘
+              /    |      |
+             /     |      |
+            ▼      ▼      ▼
+        Blog   Dashboard Contact
+        SSG      CSR       SSR
+```
 
 - SSG for blog posts
 - SSR for dynamic pages
