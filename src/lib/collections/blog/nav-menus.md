@@ -40,7 +40,7 @@ Then some CSS:
 ```css
 .has-submenu:hover > .submenu,
 .has-submenu:focus-within > .submenu {
-	display: block;
+  display: block;
 }
 ```
 
