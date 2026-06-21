@@ -10,6 +10,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam repellendus
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eveniet ad. Expedita laudantium est sunt perferendis, soluta quos odit necessitatibus quae eius ipsum neque rerum laboriosam! Eum accusamus in alias magnam vitae?
 
+![image](https://picsum.photos/400/200)
+
 This is some more.
 
 - Item 1

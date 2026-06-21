@@ -54,5 +54,16 @@
 <style>
 	.inner {
 		padding-block: 6rem;
+		/* animation: fade-in linear forwards;
+		animation-timeline: view();
+		animation-range: entry;
+		opacity: 0; */
+	}
+
+	@keyframes fade-in {
+		to {
+			opacity: 1;
+			scale: 1.05;
+		}
 	}
 </style>
