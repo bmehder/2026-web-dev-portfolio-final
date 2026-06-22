@@ -13,7 +13,7 @@
 
 <section>
 	<div class="outer bg-background-neutral">
-		<div class="inner grid auto-fill gap-3">
+		<div class="inner grid auto-fill gap-12">
 			<HeadingBox></HeadingBox>
 			<Box
 				icon={AnimationIcon}

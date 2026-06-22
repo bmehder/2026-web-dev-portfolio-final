@@ -13,7 +13,7 @@
 
 <p>This is some html.</p>
 
-<div class="grid auto-fill gap-3">
+<div class="grid auto-fill gap-12">
   <TodoList storageKey="Personal" />
   <TodoList storageKey="Grocery" title="Grocery List" />
   <TodoList title="My List" />

@@ -149,7 +149,7 @@
 	</div>
 
 	<div>
-		<div class="flex align-items-center justify-content-center gap-1-5">
+		<div class="flex items-center justify-center gap-6">
 			<p>Score: {score}</p>
 			<p>High Score: {highScore}</p>
 			<p>Speed: {interval}ms</p>

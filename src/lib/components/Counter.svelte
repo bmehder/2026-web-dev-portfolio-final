@@ -5,7 +5,7 @@
   const increment = () => count = count + 1
 </script>
 
-<div class="counter flex align-items-center">
+<div class="counter flex items-center">
   <button onclick={decrement}>-</button>
 	<span>{count}</span>
   <button onclick={increment}>+</button>

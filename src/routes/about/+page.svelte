@@ -21,7 +21,7 @@
 			<h2>Biography</h2>
 
 			<img
-				class="float-right"
+				class="md:float-right md:max-inline-sm md:ms-6 md:mbe-6"
 				src="/placeholder-1.png"
 				alt="flowers and a blue sky"
 			/>

@@ -31,7 +31,7 @@
   getDogs()
 </script>
 
-<div class="fetch-dogs grid gap-1-5">
+<div class="fetch-dogs grid gap-6">
   <form onsubmit={getDogs}>
     <label for="dogs">Count:</label>
     <input type="number" id="dogs" min="1" max="50" bind:value={count} >
@@ -40,7 +40,7 @@
     <button type="button" onclick={removeLast}>Remove Last</button>
   </form>
 
-	<div class="grid auto-fill gap-1-5">
+	<div class="grid auto-fill gap-6">
 		{#each dogs as dog}
 			<img src={dog} alt="" />
 		{/each}

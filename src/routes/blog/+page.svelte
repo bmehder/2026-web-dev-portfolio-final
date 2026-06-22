@@ -12,7 +12,7 @@
 	<div class="outer">
 		<div class="inner">
 			<h2>All Items</h2>
-			<div class="grid auto-fill gap-3">
+			<div class="grid auto-fill gap-12">
 				{#each data.posts as post}
 					<Card
 						image="blog/{post.meta.image}"
