@@ -91,6 +91,6 @@
   }
 
 	.selected {
-		outline: 2px solid var(--color-blue-hover);
+		outline: 2px solid var(--color-zinc-950);
 	}
 </style>

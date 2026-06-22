@@ -53,7 +53,7 @@
 						{/each}
 
 						<li>
-							<a class="button bg-gradient-accent-2 light" href="/contact">
+							<a class="button bg-teal-500-2 light" href="/contact">
 								Contact
 							</a>
 						</li>
@@ -97,7 +97,7 @@
 			{/each}
 
 			<li>
-				<a class="button bg-gradient-accent-2 light" href="/contact"> Contact </a>
+				<a class="button bg-teal-500-2 light" href="/contact"> Contact </a>
 			</li>
 		</ul>
 	</nav>
@@ -105,7 +105,7 @@
 
 <style>
 	.outer {
-		background-color: var(--color-blue);
+		background-color: var(--color-zinc-950);
 	}
 
 	.inner {
@@ -142,7 +142,7 @@
 		display: none;
 		gap: 1rem;
 		padding: 1.5rem;
-		background: var(--color-blue);
+		background: var(--color-zinc-950);
 		border-radius: 0.5rem;
 		list-style: none;
 	}
@@ -178,7 +178,7 @@
 		min-block-size: 100svh;
 		inline-size: 100%;
 		padding: 1.5rem;
-		background: var(--color-blue);
+		background: var(--color-zinc-950);
 		border: none;
 	}
 

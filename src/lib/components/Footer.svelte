@@ -3,34 +3,34 @@
 </script>
 
 <!-- <footer>
-  <div class="outer bg-primary">
+  <div class="outer bg-zinc-500">
     <div class="inner flex flex-wrap space-between align-items-center gap-1-5">
       <a href="/"><img src={LightLogo} alt="light logo"></a>
-      <a class="button bg-gradient-accent-2 light" href="/contact">Contact Me</a>
+      <a class="button bg-teal-500-2 light" href="/contact">Contact Me</a>
     </div>
   </div>
 </footer> -->
 
 <footer>
-	<div class="outer bg-primary light">
+	<div class="outer bg-zinc-950 text-zinc-100">
 		<div class="inner">
 			<section>
-				<h2>Acme Corporation</h2>
+				<h2 class="text-white">Acme Corporation</h2>
 
-				<p>
+				<p class="text-white">
 					Building modern digital experiences for startups, small businesses, and
 					creative teams.
 				</p>
 
-				<a class="button bg-gradient-accent-2 light" href="/contact">
+				<a class="button bg-teal-500-2 light" href="/contact">
 					Start a Project
 				</a>
 
-				<p>© {new Date().getFullYear()} Acme Corporation</p>
+				<p class="text-white">© {new Date().getFullYear()} Acme Corporation</p>
 			</section>
 
 			<nav>
-				<h2>Navigation</h2>
+				<h2 class="text-white">Navigation</h2>
 
 				<ul>
 					<li><a href="/">Home</a></li>
@@ -42,7 +42,7 @@
 			</nav>
 
 			<section>
-				<h2>Connect</h2>
+				<h2 class="text-white">Connect</h2>
 
 				<ul>
 					<li>
@@ -71,7 +71,7 @@
 		}
 	}
 
-	h2, p {
+	/* h2, p {
 		color: var(--color-white);
-	}
+	} */
 </style>

@@ -69,7 +69,7 @@
 	details {
 		padding-block: 0.5rem;
 		padding-inline: 1rem;
-		background-color: var(--color-blue-hover);
+		background-color: var(--color-zinc-950);
 		color: var(--color-white);
 		border-radius: 0.5rem;
 	}

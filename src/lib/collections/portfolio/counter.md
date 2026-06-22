@@ -37,7 +37,7 @@
 ```css
 <style>
   button {
-    background-color: var(--color-pink);
+    background-color: var(--color-green-700);
     color: var(--color-white);
     border: none;
   }

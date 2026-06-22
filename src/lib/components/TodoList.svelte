@@ -103,7 +103,7 @@
 	button {
 		font: inherit;
 		padding-inline: 1rem;
-		background-color: var(--color-blue);
+		background-color: var(--color-zinc-950);
 		color: var(--color-white);
 		border-radius: 0.5rem;
 	}

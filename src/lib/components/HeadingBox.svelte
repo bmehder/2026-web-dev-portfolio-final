@@ -1,4 +1,4 @@
-<div class="bg-gradient-accent light">
+<div class="bg-teal-500 light">
   <h2>Check out my collections!</h2>
 </div>
 

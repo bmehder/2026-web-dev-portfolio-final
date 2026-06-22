@@ -33,7 +33,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/portfolio">Portfolio</a></li>
-                <a class="button bg-primary light justify-self-start" href="/contact"
+                <a class="button bg-zinc-500 light justify-self-start" href="/contact"
                   >Contact Me</a
                 >
               </ul>

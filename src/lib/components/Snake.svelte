@@ -156,7 +156,7 @@
 		</div>
 		{#if isGameOver}
 			<p>Game Over</p>
-			<button class="bg-primary bg-primary-hover light" onclick={reset}
+			<button class="bg-zinc-500 bg-zinc-400 light" onclick={reset}
 				>New Game</button
 			>
 		{/if}

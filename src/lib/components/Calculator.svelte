@@ -111,7 +111,7 @@
 		display: grid;
 		gap: 0.5rem;
 		padding: 0.5rem;
-		background-color: var(--color-blue);
+		background-color: var(--color-zinc-950);
 		color: white;
 		border-radius: 0.5rem;
 	}

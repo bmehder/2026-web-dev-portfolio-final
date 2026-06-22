@@ -65,7 +65,7 @@
 							</ul>
 						</li>
 						<li>
-							<a class="button bg-gradient-accent-2 light" href="/contact">Contact</a
+							<a class="button bg-teal-500-2 light" href="/contact">Contact</a
 							>
 						</li>
 					</ul>
@@ -77,7 +77,7 @@
 
 <style>
 	.outer {
-		background-color: var(--color-blue);
+		background-color: var(--color-zinc-950);
 	}
 
 	.inner {
@@ -130,7 +130,7 @@
 		z-index: 1;
 		display: none;
 		padding: 1rem;
-		background-color: var(--color-blue);
+		background-color: var(--color-zinc-950);
 		border-radius: 0.5rem;
 	}
 

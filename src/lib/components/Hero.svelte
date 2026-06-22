@@ -1,13 +1,13 @@
 <section>
 	<div class="outer">
 		<div class="inner">
-			<div class="content bg-gradient-primary light">
+			<div class="content bg-zinc-950 text-white">
 				<h1>Maximize skill, minimize budget</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus id
 					repellat pariatur! Quia, recusandae perferendis.
 				</p>
-				<a href="/portfolio" class="button bg-gradient-accent light"
+				<a href="/portfolio" class="button bg-teal-500 text-white"
 					>View Portfolio</a
 				>
 			</div>
