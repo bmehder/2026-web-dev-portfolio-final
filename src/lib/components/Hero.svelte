@@ -1,13 +1,13 @@
 <section>
 	<div class="outer">
 		<div class="inner">
-			<div class="content bg-zinc-950 text-white">
+			<div class="content bg-zinc-800 text-zinc-100">
 				<h1>Maximize skill, minimize budget</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus id
 					repellat pariatur! Quia, recusandae perferendis.
 				</p>
-				<a href="/portfolio" class="button bg-teal-500 text-white"
+				<a href="/portfolio" class="button"
 					>View Portfolio</a
 				>
 			</div>

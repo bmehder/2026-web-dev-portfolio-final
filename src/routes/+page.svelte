@@ -12,7 +12,7 @@
 <Hero></Hero>
 
 <section>
-	<div class="outer bg-background-neutral">
+	<div class="outer bg-zinc-50">
 		<div class="inner grid auto-fill gap-12">
 			<HeadingBox></HeadingBox>
 			<Box

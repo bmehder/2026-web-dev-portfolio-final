@@ -1,4 +1,4 @@
-<div class="bg-teal-500 light">
+<div class="bg-zinc-800">
   <h2>Check out my collections!</h2>
 </div>
 

@@ -53,7 +53,7 @@
 						{/each}
 
 						<li>
-							<a class="button bg-teal-500-2 light" href="/contact">
+							<a class="button" href="/contact">
 								Contact
 							</a>
 						</li>
@@ -97,7 +97,7 @@
 			{/each}
 
 			<li>
-				<a class="button bg-teal-500-2 light" href="/contact"> Contact </a>
+				<a class="button text-zinc-100" href="/contact"> Contact </a>
 			</li>
 		</ul>
 	</nav>
@@ -106,6 +106,7 @@
 <style>
 	.outer {
 		background-color: var(--color-zinc-950);
+		color: var(--color-zinc-100);
 	}
 
 	.inner {

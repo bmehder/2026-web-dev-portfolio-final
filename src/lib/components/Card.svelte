@@ -9,7 +9,7 @@
 	} = $props()
 </script>
 
-<article class="card">
+<article class="card shadow-md">
 	{#if image}
 		<a {href}><img class="card-image" src={image} alt="describe the thing" /></a>
 	{/if}
@@ -19,7 +19,7 @@
 			<h3 class="card-title"><a {href}>{title}</a></h3>
 		</div>
 		<p class="card-excerpt">{excerpt}</p>
-		<a class="button justify-self-start bg-zinc-500 bg-zinc-400 light" {href}>{buttonLabel}</a>
+		<a class="button justify-self-start" {href}>{buttonLabel}</a>
 	</div>
 </article>
 
@@ -27,11 +27,10 @@
 	.card {
 		display: grid;
 		grid-template-rows: auto 1fr;
-		background-color: white;
-		color: black;
+		background-color: var(--color-white);
+		color: var(--color-black);
 		border-radius: 0.25rem;
 		overflow: hidden;
-		box-shadow: var(--box-shadow);
 	}
 
 	.card-image {
@@ -58,9 +57,5 @@
 
 	.card-excerpt {
 		font-size: 0.9rem;
-	}
-
-	img {
-		view-transition-name: image;
 	}
 </style>

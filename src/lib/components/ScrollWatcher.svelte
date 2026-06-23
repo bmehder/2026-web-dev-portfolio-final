@@ -6,7 +6,7 @@
     top: 0;
     width: 100%;
     height: 10px;
-    background-color: var(--color-green-700);
+    background-color: var(--color-indigo-500);
     scale: 0 1;
     animation: scroll-watcher linear;
     animation-timeline: scroll();

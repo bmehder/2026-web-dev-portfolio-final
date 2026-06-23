@@ -9,7 +9,7 @@
 <PageTitle title="Blog"></PageTitle>
 
 <section>
-	<div class="outer">
+	<div class="oute">
 		<div class="inner">
 			<h2>All Items</h2>
 			<div class="grid auto-fill gap-12">

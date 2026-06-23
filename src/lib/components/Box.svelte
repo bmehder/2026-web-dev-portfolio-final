@@ -2,7 +2,7 @@
   let { icon, heading, description, href, linkText = "Get Started" } = $props()
 </script>
 
-<div class="bg-light">
+<div class="bg-white shadow-md">
   <img src={icon} alt="">
   <h3>{heading}</h3>
   <p class="neutral">{description}</p>
