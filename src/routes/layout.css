@@ -5,6 +5,8 @@
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/utilities.css' layer(utilities);
 
+@source "../**/*.{svelte,md,svx}";
+
 @layer base {
 	* {
 		box-sizing: border-box;
